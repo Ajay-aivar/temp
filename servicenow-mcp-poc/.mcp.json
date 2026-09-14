@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "servicenow-dit-readonly": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "/Users/ajaymahto/Desktop/syngene/untitled folder/servicenow-mcp-poc",
+        "server.py"
+      ]
+    }
+  }
+}
