@@ -1,0 +1,27 @@
+Hi Siddesh, Preeti and Harish,
+
+
+
+For the ServiceNow MCP POC, we have validated the ServiceNow REST Table API using a read-only GET request on the Incident table and received a 200 OK JSON response.
+
+
+
+We also evaluated the native ServiceNow MCP option. ServiceNow provides MCP Server Console  capabilities to create and govern native MCP servers for AI clients such as Claude. However, this capability was not available in the free Personal Developer Instance due to likely plugin, licensing, entitlement, or release limitations.
+
+
+
+For the current POC, we recommend a custom read-only Python MCP server using the ServiceNow REST Table API. For Syngene production, please confirm whether MCP Server Console / Action Fabric/native MCP is available and licensed in the Syngene ServiceNow environment. If available, this may be the preferred governed production route.
+
+
+
+We request:
+• Direct ServiceNow URL and approved Sandbox/UAT/sub-prod environment
+• Confirmation of native MCP Server Console / Action Fabric availability
+• OAuth 2.0 preferred; Basic Auth only if approved for POC
+• Least-privilege read-only access to incident, change_request, kb_knowledge, and required group lookup data
+• GET-only REST Table API access
+• HTTPS 443/IP allowlisting, rate-limit, SSO/MFA, and security/CISO confirmation
+
+
+
+No write access, ticket update/closure, change approval, workflow triggering, or automated messages are required. Claude outputs will remain human-reviewed drafts only.
