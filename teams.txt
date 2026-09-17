@@ -17,10 +17,10 @@ For the current POC, we recommend a custom read-only Python MCP server using the
 We request:
 • Direct ServiceNow URL and approved Sandbox/UAT/sub-prod environment
 • Confirmation of native MCP Server Console / Action Fabric availability
-• OAuth 2.0 preferred; Basic Auth only if approved for POC
+• User Name and Password for that service account (or OAuth 2.0 client ID + client secret if OAuth is preferred over Basic Auth)
+• Role snc_basic_auth_api_access on the service account — mandatory for Basic Auth REST calls on current ServiceNow releases; without it every call returns 401
 • Least-privilege read-only access to incident, change_request, kb_knowledge, and required group lookup data
 • GET-only REST Table API access
-• HTTPS 443/IP allowlisting, rate-limit, SSO/MFA, and security/CISO confirmation
 
 
 
